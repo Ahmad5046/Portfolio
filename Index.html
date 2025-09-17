@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ahmad Akram - Geospatial Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <main class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#2D82B7] mb-2">The Modern Agricultural Engineer</h1>
+            <p class="text-xl md:text-2xl text-gray-600">Fusing Data Science with Sustainable Agriculture</p>
+        </header>
+
+        <section id="intro" class="mb-16 bg-white p-8 rounded-lg shadow-lg text-center">
+            <h2 class="text-3xl font-bold text-[#54A0D3] mb-4">Muhammad Ahmad Akram</h2>
+            <p class="text-lg max-w-3xl mx-auto mb-6">
+                This portfolio visualizes the profile of a highly skilled Agricultural Engineer specializing in geospatial analysis and data-driven solutions. With extensive experience in Google Earth Engine, Python, and GIS, the focus is on leveraging cutting-edge technology to address critical challenges in water resource management, climate resilience, and precision agriculture.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <p class="text-5xl font-extrabold text-[#2D82B7]">5+</p>
+                    <p class="text-lg font-semibold text-gray-700 mt-2">Core GIS & Programming Tools</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <p class="text-5xl font-extrabold text-[#2D82B7]">10+</p>
+                    <p class="text-lg font-semibold text-gray-700 mt-2">Geospatial Projects & Analyses</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <p class="text-5xl font-extrabold text-[#2D82B7]">3</p>
+                    <p class="text-lg font-semibold text-gray-700 mt-2">Key Application Areas</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="competencies" class="mb-16">
+             <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-center text-[#54A0D3] mb-2">Core Competencies</h2>
+                <p class="text-lg text-center text-gray-600 mb-8">A balanced expertise across critical domains, from data processing to environmental management.</p>
+                <div class="chart-container h-96 max-h-[500px]">
+                    <canvas id="competenciesChart"></canvas>
+                </div>
+                <p class="text-center text-gray-500 mt-4 italic">The radar chart illustrates a strong, well-rounded skill set, with exceptional proficiency in Geospatial Analysis and Python Scripting, which are foundational to modern environmental data science.</p>
+             </div>
+        </section>
+
+        <section id="toolkit" class="mb-16">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-center text-[#54A0D3] mb-2">Geospatial & Data Toolkit</h2>
+                <p class="text-lg text-center text-gray-600 mb-8">Proficiency with industry-standard tools for data extraction, processing, and visualization.</p>
+                <div class="chart-container h-96 max-h-[500px]">
+                    <canvas id="toolkitChart"></canvas>
+                </div>
+                <p class="text-center text-gray-500 mt-4 italic">This chart ranks proficiency with key technologies. Mastery of Google Earth Engine and Python for GIS automation highlights the capacity to handle large-scale, complex data challenges efficiently.</p>
+            </div>
+        </section>
+        
+        <section id="workflow" class="mb-16">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-center text-[#54A0D3] mb-2">A Typical Data-to-Insight Workflow</h2>
+                <p class="text-lg text-center text-gray-600 mb-8">A structured approach to transforming raw satellite data into actionable environmental insights.</p>
+                <div class="relative wrap overflow-hidden p-10 h-full">
+                    <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#2D82B7] shadow-xl w-12 h-12 rounded-full">
+                            <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                        </div>
+                        <div class="order-1 bg-[#93C9E9] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="font-bold text-gray-800 text-xl">Data Acquisition</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Sourcing raw data from satellite missions like Landsat and GRACE.</p>
+                        </div>
+                    </div>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#2D82B7] shadow-xl w-12 h-12 rounded-full">
+                            <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+                        </div>
+                        <div class="order-1 bg-[#BCE0F5] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="font-bold text-gray-800 text-xl">Cloud Processing</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Utilizing Google Earth Engine for large-scale, parallel processing of geospatial data.</p>
+                        </div>
+                    </div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#2D82B7] shadow-xl w-12 h-12 rounded-full">
+                            <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                        </div>
+                        <div class="order-1 bg-[#93C9E9] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="font-bold text-gray-800 text-xl">Scripting & Analysis</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Applying Python scripts (ArcPy/PyQGIS) for custom analysis and task automation.</p>
+                        </div>
+                    </div>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#2D82B7] shadow-xl w-12 h-12 rounded-full">
+                            <h1 class="mx-auto text-white font-semibold text-lg">4</h1>
+                        </div>
+                        <div class="order-1 bg-[#BCE0F5] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="font-bold text-gray-800 text-xl">Insight Generation</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Extracting key metrics like Evapotranspiration (ET) and groundwater levels to inform decisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="applications" class="mb-16">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-center text-[#54A0D3] mb-2">Primary Application Areas</h2>
+                 <p class="text-lg text-center text-gray-600 mb-8">Applying geospatial expertise to solve real-world problems in agriculture and environmental science.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="chart-container h-80 max-h-[350px]">
+                        <canvas id="applicationChart"></canvas>
+                    </div>
+                    <div>
+                        <div class="flex items-start mb-4">
+                            <div class="w-4 h-4 rounded-full bg-[#2D82B7] mt-1 mr-3 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-bold text-lg">Water Resource Management</h4>
+                                <p>Analyzing GRACE data for groundwater depletion and modeling sustainable water use with SWAT.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="w-4 h-4 rounded-full bg-[#7DB87B] mt-1 mr-3 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-bold text-lg">Climate Data Analysis</h4>
+                                <p>Processing CORDEX and satellite data to understand climate impacts on agricultural systems.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-4 h-4 rounded-full bg-[#93C9E9] mt-1 mr-3 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="font-bold text-lg">Precision Agriculture</h4>
+                                <p>Developing data-driven approaches like hydroponics and site suitability analysis to optimize crop yields.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-12 py-6 border-t-2 border-gray-200">
+            <p class="text-lg font-semibold text-[#2D82B7]">Let's Connect</p>
+            <p class="text-gray-600 mb-4">Open to discussing opportunities in data science, climate tech, and sustainable agriculture.</p>
+            <div class="flex justify-center space-x-6">
+                 <a href="mailto:muhammandahmad158609@gmail.com" class="text-[#54A0D3] hover:text-[#2D82B7] transition-colors">Email</a>
+                 <a href="https://www.linkedin.com/in/muhammad-ahmad-akram-7aa372255" target="_blank" class="text-[#54A0D3] hover:text-[#2D82B7] transition-colors">LinkedIn</a>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        const tooltipConfig = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        const processLabels = (labels) => {
+            const CHAR_LIMIT = 16;
+            return labels.map(label => {
+                if (label.length <= CHAR_LIMIT) {
+                    return label;
+                }
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + word).length > CHAR_LIMIT) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                });
+                lines.push(currentLine.trim());
+                return lines;
+            });
+        };
+
+        const competenciesData = {
+            labels: processLabels(['Geospatial Analysis', 'Data Processing', 'Water Management', 'Python Scripting', 'Climate Data Modeling']),
+            datasets: [{
+                label: 'Proficiency Level',
+                data: [90, 85, 80, 88, 75],
+                backgroundColor: 'rgba(84, 160, 211, 0.2)',
+                borderColor: '#2D82B7',
+                pointBackgroundColor: '#2D82B7',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: '#2D82B7'
+            }]
+        };
+        new Chart(document.getElementById('competenciesChart'), {
+            type: 'radar',
+            data: competenciesData,
+            options: {
+                ...tooltipConfig,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { color: '#BCE0F5' },
+                        grid: { color: '#BCE0F5' },
+                        pointLabels: { font: { size: 14 } },
+                        ticks: { backdropColor: 'transparent', stepSize: 20 },
+                        suggestedMin: 0,
+                        suggestedMax: 100
+                    }
+                }
+            }
+        });
+
+        const toolkitData = {
+            labels: processLabels(['Google Earth Engine', 'Python (ArcPy, PyQGIS)', 'QGIS / ArcGIS', 'SWAT Plus', 'MODFlow']),
+            datasets: [{
+                label: 'Experience Level',
+                data: [95, 90, 85, 75, 70],
+                backgroundColor: ['#2D82B7', '#54A0D3', '#7DB87B', '#93C9E9', '#BCE0F5'],
+                borderColor: '#fff',
+                borderWidth: 1
+            }]
+        };
+        new Chart(document.getElementById('toolkitChart'), {
+            type: 'bar',
+            data: toolkitData,
+            options: {
+                ...tooltipConfig,
+                indexAxis: 'y',
+                maintainAspectRatio: false,
+                scales: {
+                    x: { suggestedMax: 100 }
+                },
+                plugins: {
+                   ...tooltipConfig.plugins,
+                    legend: { display: false }
+                }
+            }
+        });
+
+        const applicationData = {
+            labels: processLabels(['Water Resource Management', 'Climate Data Analysis', 'Precision Agriculture']),
+            datasets: [{
+                label: 'Focus Area',
+                data: [40, 30, 30],
+                backgroundColor: ['#2D82B7', '#7DB87B', '#93C9E9'],
+                hoverOffset: 4
+            }]
+        };
+        new Chart(document.getElementById('applicationChart'), {
+            type: 'doughnut',
+            data: applicationData,
+            options: {
+                ...tooltipConfig,
+                maintainAspectRatio: false,
+                plugins: {
+                    ...tooltipConfig.plugins,
+                    legend: { position: 'bottom' }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
